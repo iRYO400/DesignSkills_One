@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tvToolbar">18sp</dimen>
+    <dimen name="tvLarge">24sp</dimen>
+    <dimen name="tvMedium">21sp</dimen>
+    <dimen name="tvSmall">17sp</dimen>
+
+    <dimen name="tvOrderTitle">17sp</dimen>
+    <dimen name="tvOrderTitling">17sp</dimen>
+    <dimen name="tvOrderCost">48sp</dimen>
+    <dimen name="tvOrderTiming">36sp</dimen>
+
+    <dimen name="paddingSides">12dp</dimen>
+    <dimen name="marginSides">4dp</dimen>
+    <dimen name="marginTopBot">8dp</dimen>
+    <dimen name="paddingSides2">24dp</dimen>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DesignSkills_One</string>
+    <string name="passed">Оформлен</string>
+    <string name="pending">Ожидается подтверждение…</string>
+    <string name="cancelled">Ошибка оформления</string>
+
+    <string name="waitingTime">Ожидание</string>
+
+
+    <string name="exchangePassed">Возврат оформлен</string>
+    <string name="exchangeCanceled">Отказано</string>
+
+    <string name="tvToolbarMain">Мои заказы</string>
+    <string name="tvToolbarDetails">Детали заказа</string>
+    <string name="tvFlight">Рейс&#160;</string>
+</resources>

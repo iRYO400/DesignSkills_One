@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginSides"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingSides">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvFlight"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/tvOrderTitling" />
+
+        <TextView
+            android:id="@+id/tvFlightNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="538"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/tvOrderTitling" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFlightName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-medium"
+        android:text="Семипалатинск - Усть-Каменогорск"
+        android:textColor="@color/colorBlueDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flight_takeoff_24dp" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                style="@style/StyleOrderTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:05" />
+
+            <TextView
+                android:id="@+id/tvStartCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEM"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.10.2016"
+                android:textColor="@color/colorBlueDark" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="-----" />
+
+        <TextView
+            android:id="@+id/tvFlightTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="2ч 40м" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="-----" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flight_land_24dp" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                style="@style/StyleOrderTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:45" />
+
+            <TextView
+                android:id="@+id/tvEndCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UST"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.10.2016"
+                android:textColor="@color/colorBlueDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutWaiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ожидание: "
+                android:textSize="@dimen/tvOrderTitle" />
+
+            <TextView
+                android:id="@+id/tvWaitTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="15 ч. 20 м."
+                android:textSize="@dimen/tvOrderTitle" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGrey" />
+    </LinearLayout>
+</LinearLayout>

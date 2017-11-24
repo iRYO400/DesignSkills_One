@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fadeScrollbars="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="workshop.akbolatss.designskillsone.second.DetailsActivity">
+
+        <!--<include-->
+        <!--layout="@layout/toolbar_details"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_blue"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                style="@style/StyleOrderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Общая стоимость" />
+
+            <TextView
+                style="@style/StyleOrderCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="134 000" />
+
+            <TextView
+                style="@style/StyleOrderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="64dp"
+                android:text="тенге" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/StyleOrderBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:text="Возврат" />
+
+                <Button
+                    style="@style/StyleOrderBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="Обмен" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_grey"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flight_24dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/StyleOrderTitling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Авиабилет" />
+
+                <TextView
+                    style="@style/StyleOrderTitling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="№ брони: 123456"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/StyleOrderTitling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="100 000 тг" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars='false'
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:text="Общее время в пути: 7 ч 35 мин"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/tvOrderTitle" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_grey">
+
+            <TextView
+                style="@style/StyleOrderTitling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пассажиры" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_grey">
+
+            <TextView
+                style="@style/StyleOrderTitling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="№ бронирования" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingSides"
+            android:text="L2SADB"
+            android:textColor="@color/colorDark2"
+            android:textSize="@dimen/tvOrderTitle" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_grey">
+
+            <TextView
+                style="@style/StyleOrderTitling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Список возвратов и обменов" />
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvExchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</ScrollView>
